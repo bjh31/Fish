@@ -1,0 +1,322 @@
+// !$*UTF8*$!
+{
+	1D3623250D0F684500981E51 /* FishAppDelegate.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1965, 858}}";
+			sepNavSelRange = "{0, 0}";
+			sepNavVisRange = "{0, 1560}";
+		};
+	};
+	1D6058900D05DD3D006BFB54 /* Fish */ = {
+		activeExec = 0;
+		executables = (
+			B29BC1171402232300A136FA /* Fish */,
+		);
+	};
+	28D7ACF60DDB3853001CB0EB /* FishViewController.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1279, 618}}";
+			sepNavSelRange = "{222, 0}";
+			sepNavVisRange = "{0, 289}";
+		};
+	};
+	28D7ACF70DDB3853001CB0EB /* FishViewController.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1279, 1118}}";
+			sepNavSelRange = "{1394, 110}";
+			sepNavVisRange = "{815, 1039}";
+			sepNavWindowFrame = "{{61, 253}, {794, 728}}";
+		};
+	};
+	29B97313FDCFA39411CA2CEA /* Project object */ = {
+		activeBuildConfigurationName = Debug;
+		activeExecutable = B29BC1171402232300A136FA /* Fish */;
+		activeSDKPreference = iphoneos4.3;
+		activeTarget = 1D6058900D05DD3D006BFB54 /* Fish */;
+		addToTargets = (
+			1D6058900D05DD3D006BFB54 /* Fish */,
+		);
+		codeSenseManager = B29BC11E1402234200A136FA /* Code sense */;
+		executables = (
+			B29BC1171402232300A136FA /* Fish */,
+		);
+		perUserDictionary = {
+			PBXConfiguration.PBXFileTableDataSource3.PBXFileTableDataSource = {
+				PBXFileTableDataSourceColumnSortingDirectionKey = "-1";
+				PBXFileTableDataSourceColumnSortingKey = PBXFileDataSource_Filename_ColumnID;
+				PBXFileTableDataSourceColumnWidthsKey = (
+					20,
+					1101,
+					20,
+					48,
+					43,
+					43,
+					20,
+				);
+				PBXFileTableDataSourceColumnsKey = (
+					PBXFileDataSource_FiletypeID,
+					PBXFileDataSource_Filename_ColumnID,
+					PBXFileDataSource_Built_ColumnID,
+					PBXFileDataSource_ObjectSize_ColumnID,
+					PBXFileDataSource_Errors_ColumnID,
+					PBXFileDataSource_Warnings_ColumnID,
+					PBXFileDataSource_Target_ColumnID,
+				);
+			};
+			PBXPerProjectTemplateStateSaveDate = 335687840;
+			PBXWorkspaceStateSaveDate = 335687840;
+		};
+		perUserProjectItems = {
+			B2576301140231C800668CB2 /* PBXTextBookmark */ = B2576301140231C800668CB2 /* PBXTextBookmark */;
+			B25763261402337600668CB2 /* PBXTextBookmark */ = B25763261402337600668CB2 /* PBXTextBookmark */;
+			B25763641402390700668CB2 /* PBXTextBookmark */ = B25763641402390700668CB2 /* PBXTextBookmark */;
+			B25763651402390700668CB2 /* PBXTextBookmark */ = B25763651402390700668CB2 /* PBXTextBookmark */;
+			B257636E14023A1900668CB2 /* PlistBookmark */ = B257636E14023A1900668CB2 /* PlistBookmark */;
+			B257636F14023A1900668CB2 /* PBXTextBookmark */ = B257636F14023A1900668CB2 /* PBXTextBookmark */;
+			B257637114023A1900668CB2 /* PBXTextBookmark */ = B257637114023A1900668CB2 /* PBXTextBookmark */;
+			B257637E14023C8700668CB2 /* PBXTextBookmark */ = B257637E14023C8700668CB2 /* PBXTextBookmark */;
+			B257638C14023EB900668CB2 /* PBXTextBookmark */ = B257638C14023EB900668CB2 /* PBXTextBookmark */;
+			B257638D14023EB900668CB2 /* PBXTextBookmark */ = B257638D14023EB900668CB2 /* PBXTextBookmark */;
+			B257638E14023EB900668CB2 /* PBXTextBookmark */ = B257638E14023EB900668CB2 /* PBXTextBookmark */;
+			B257638F14023EB900668CB2 /* PBXTextBookmark */ = B257638F14023EB900668CB2 /* PBXTextBookmark */;
+			B29BC1531402264F00A136FA /* PBXTextBookmark */ = B29BC1531402264F00A136FA /* PBXTextBookmark */;
+		};
+		sourceControlManager = B29BC11D1402234200A136FA /* Source Control */;
+		userBuildSettings = {
+		};
+	};
+	B2576301140231C800668CB2 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = B29BC190140228D900A136FA /* Fish.h */;
+		name = "Fish.h: 5";
+		rLen = 0;
+		rLoc = 43;
+		rType = 0;
+		vrLen = 173;
+		vrLoc = 0;
+	};
+	B25763261402337600668CB2 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 28D7ACF60DDB3853001CB0EB /* FishViewController.h */;
+		name = "FishViewController.h: 13";
+		rLen = 0;
+		rLoc = 222;
+		rType = 0;
+		vrLen = 289;
+		vrLoc = 0;
+	};
+	B25763641402390700668CB2 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = B29BC1B5140229C800A136FA /* AccController.h */;
+		name = "AccController.h: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 206;
+		vrLoc = 0;
+	};
+	B25763651402390700668CB2 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = B29BC1B6140229C800A136FA /* AccController.m */;
+		name = "AccController.m: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 794;
+		vrLoc = 0;
+	};
+	B257636E14023A1900668CB2 /* PlistBookmark */ = {
+		isa = PlistBookmark;
+		fRef = 8D1107310486CEB800E47090 /* Fish-Info.plist */;
+		fallbackIsa = PBXBookmark;
+		isK = 0;
+		kPath = (
+			UIStatusBarHidden,
+		);
+		name = "/Users/dl106/Desktop/Fish/Fish-Info.plist";
+		rLen = 0;
+		rLoc = 2147483647;
+	};
+	B257636F14023A1900668CB2 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 28D7ACF70DDB3853001CB0EB /* FishViewController.m */;
+		name = "FishViewController.m: 64";
+		rLen = 110;
+		rLoc = 1394;
+		rType = 0;
+		vrLen = 1039;
+		vrLoc = 815;
+	};
+	B257637114023A1900668CB2 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = B29BC137140224F300A136FA /* AsthmapediaViewController.h */;
+		name = "AsthmapediaViewController.h: 16";
+		rLen = 0;
+		rLoc = 255;
+		rType = 0;
+		vrLen = 262;
+		vrLoc = 0;
+	};
+	B257637E14023C8700668CB2 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = B29BC138140224F300A136FA /* AsthmapediaViewController.m */;
+		name = "AsthmapediaViewController.m: 43";
+		rLen = 0;
+		rLoc = 1144;
+		rType = 0;
+		vrLen = 1235;
+		vrLoc = 48;
+	};
+	B257638C14023EB900668CB2 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = B29BC122140223BF00A136FA /* GameViewController.h */;
+		name = "GameViewController.h: 17";
+		rLen = 0;
+		rLoc = 267;
+		rType = 0;
+		vrLen = 274;
+		vrLoc = 0;
+	};
+	B257638D14023EB900668CB2 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = B29BC123140223BF00A136FA /* GameViewController.m */;
+		name = "GameViewController.m: 28";
+		rLen = 0;
+		rLoc = 572;
+		rType = 0;
+		vrLen = 1092;
+		vrLoc = 144;
+	};
+	B257638E14023EB900668CB2 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = B29BC191140228D900A136FA /* Fish.m */;
+		name = "Fish.m: 29";
+		rLen = 0;
+		rLoc = 628;
+		rType = 0;
+		vrLen = 1011;
+		vrLoc = 0;
+	};
+	B257638F14023EB900668CB2 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = B29BC191140228D900A136FA /* Fish.m */;
+		name = "Fish.m: 38";
+		rLen = 0;
+		rLoc = 849;
+		rType = 0;
+		vrLen = 1060;
+		vrLoc = 45;
+	};
+	B29BC1171402232300A136FA /* Fish */ = {
+		isa = PBXExecutable;
+		activeArgIndices = (
+		);
+		argumentStrings = (
+		);
+		autoAttachOnCrash = 1;
+		breakpointsEnabled = 0;
+		configStateDict = {
+		};
+		customDataFormattersEnabled = 1;
+		dataTipCustomDataFormattersEnabled = 1;
+		dataTipShowTypeColumn = 1;
+		dataTipSortType = 0;
+		debuggerPlugin = GDBDebugging;
+		disassemblyDisplayState = 0;
+		dylibVariantSuffix = "";
+		enableDebugStr = 1;
+		environmentEntries = (
+		);
+		executableSystemSymbolLevel = 0;
+		executableUserSymbolLevel = 0;
+		libgmallocEnabled = 0;
+		name = Fish;
+		savedGlobals = {
+		};
+		showTypeColumn = 0;
+		sourceDirectories = (
+		);
+		startupPath = "<<ProjectDirectory>>";
+	};
+	B29BC11D1402234200A136FA /* Source Control */ = {
+		isa = PBXSourceControlManager;
+		fallbackIsa = XCSourceControlManager;
+		isSCMEnabled = 0;
+		scmConfiguration = {
+			repositoryNamesForRoots = {
+				"" = "";
+			};
+		};
+	};
+	B29BC11E1402234200A136FA /* Code sense */ = {
+		isa = PBXCodeSenseManager;
+		indexTemplatePath = "";
+	};
+	B29BC122140223BF00A136FA /* GameViewController.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1279, 595}}";
+			sepNavSelRange = "{267, 0}";
+			sepNavVisRange = "{0, 274}";
+		};
+	};
+	B29BC123140223BF00A136FA /* GameViewController.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1619, 1014}}";
+			sepNavSelRange = "{1238, 0}";
+			sepNavVisRange = "{685, 943}";
+			sepNavWindowFrame = "{{15, 295}, {794, 728}}";
+		};
+	};
+	B29BC137140224F300A136FA /* AsthmapediaViewController.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1279, 595}}";
+			sepNavSelRange = "{255, 0}";
+			sepNavVisRange = "{0, 262}";
+		};
+	};
+	B29BC138140224F300A136FA /* AsthmapediaViewController.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1279, 832}}";
+			sepNavSelRange = "{1144, 0}";
+			sepNavVisRange = "{48, 1235}";
+		};
+	};
+	B29BC1531402264F00A136FA /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 1D3623250D0F684500981E51 /* FishAppDelegate.m */;
+		name = "FishAppDelegate.m: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 1560;
+		vrLoc = 0;
+	};
+	B29BC190140228D900A136FA /* Fish.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1279, 618}}";
+			sepNavSelRange = "{43, 0}";
+			sepNavVisRange = "{0, 173}";
+		};
+	};
+	B29BC191140228D900A136FA /* Fish.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1279, 676}}";
+			sepNavSelRange = "{849, 0}";
+			sepNavVisRange = "{45, 1060}";
+		};
+	};
+	B29BC1B5140229C800A136FA /* AccController.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1279, 595}}";
+			sepNavSelRange = "{0, 0}";
+			sepNavVisRange = "{0, 206}";
+		};
+	};
+	B29BC1B6140229C800A136FA /* AccController.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1279, 595}}";
+			sepNavSelRange = "{0, 0}";
+			sepNavVisRange = "{0, 794}";
+		};
+	};
+}

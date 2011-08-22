@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>files</key>
+	<dict>
+		<key>AsthmapediaViewController.nib</key>
+		<data>
+		71N200aFPnrSwc5XSASq7GgVFRo=
+		</data>
+		<key>FishViewController.nib</key>
+		<data>
+		1lfhh1uxTV6oTHL3gPg8qreB7ks=
+		</data>
+		<key>GameViewController.nib</key>
+		<data>
+		S6Kh8JuJyHxVPz3HwZ9Z+JiSFXs=
+		</data>
+		<key>MainWindow.nib</key>
+		<data>
+		yRDwJaKSyMa47t5mr1Uqka0wqaI=
+		</data>
+		<key>PkgInfo</key>
+		<data>
+		n57qDP4tZfLD1rCS43W0B4LQjzE=
+		</data>
+		<key>embedded.mobileprovision</key>
+		<data>
+		XffgHyjLvNKK1Upv7o7bZ1KgeKE=
+		</data>
+		<key>fish.png</key>
+		<data>
+		amXQQgIJ13w7BZxDNX68/6gOHGU=
+		</data>
+	</dict>
+	<key>rules</key>
+	<dict>
+		<key>.*</key>
+		<true/>
+		<key>Info.plist</key>
+		<dict>
+			<key>omit</key>
+			<true/>
+			<key>weight</key>
+			<real>10</real>
+		</dict>
+		<key>ResourceRules.plist</key>
+		<dict>
+			<key>omit</key>
+			<true/>
+			<key>weight</key>
+			<real>100</real>
+		</dict>
+	</dict>
+</dict>
+</plist>

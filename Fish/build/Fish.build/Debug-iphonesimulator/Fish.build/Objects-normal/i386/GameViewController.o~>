@@ -1,0 +1,4 @@
+/Users/dl106/Desktop/Fish/Classes/GameViewController.m:81: warning: property 'lungs' requires method '-lungs' to be defined - use @synthesize, @dynamic or provide a method implementation
+/Users/dl106/Desktop/Fish/Classes/GameViewController.m:81: warning: property 'lungs' requires the method 'setLungs:' to be defined - use @synthesize, @dynamic or provide a method implementation
+/Users/dl106/Desktop/Fish/Classes/GameViewController.m:81: warning: incomplete implementation of class 'GameViewController'
+/Users/dl106/Desktop/Fish/Classes/GameViewController.m:81: warning: method definition for '-screenTouched:withEvent:' not found
