@@ -15,13 +15,13 @@
 		2899E5220DE3E06400AC0155 /* FishViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2899E5210DE3E06400AC0155 /* FishViewController.xib */; };
 		28AD733F0D9D9553002E5188 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28AD733E0D9D9553002E5188 /* MainWindow.xib */; };
 		28D7ACF80DDB3853001CB0EB /* FishViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 28D7ACF70DDB3853001CB0EB /* FishViewController.m */; };
-		B29BC1201402239400A136FA /* fish.png in Resources */ = {isa = PBXBuildFile; fileRef = B29BC11F1402239400A136FA /* fish.png */; };
 		B29BC125140223C000A136FA /* GameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B29BC123140223BF00A136FA /* GameViewController.m */; };
 		B29BC126140223C000A136FA /* GameViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B29BC124140223BF00A136FA /* GameViewController.xib */; };
 		B29BC13A140224F300A136FA /* AsthmapediaViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B29BC138140224F300A136FA /* AsthmapediaViewController.m */; };
 		B29BC13B140224F300A136FA /* AsthmapediaViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B29BC139140224F300A136FA /* AsthmapediaViewController.xib */; };
 		B29BC192140228D900A136FA /* Fish.m in Sources */ = {isa = PBXBuildFile; fileRef = B29BC191140228D900A136FA /* Fish.m */; };
-		B29BC1B7140229C800A136FA /* AccController.m in Sources */ = {isa = PBXBuildFile; fileRef = B29BC1B6140229C800A136FA /* AccController.m */; };
+		B2D812211403191900F6CEF2 /* fish.png in Resources */ = {isa = PBXBuildFile; fileRef = B2D812201403191900F6CEF2 /* fish.png */; };
+		B2D8123E1403194F00F6CEF2 /* AccController.m in Sources */ = {isa = PBXBuildFile; fileRef = B2D8123D1403194F00F6CEF2 /* AccController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,7 +38,6 @@
 		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		32CA4F630368D1EE00C91783 /* Fish_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Fish_Prefix.pch; sourceTree = "<group>"; };
 		8D1107310486CEB800E47090 /* Fish-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Fish-Info.plist"; plistStructureDefinitionIdentifier = "com.apple.xcode.plist.structure-definition.iphone.info-plist"; sourceTree = "<group>"; };
-		B29BC11F1402239400A136FA /* fish.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = fish.png; path = ../../.Trash/fish.png; sourceTree = SOURCE_ROOT; };
 		B29BC122140223BF00A136FA /* GameViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameViewController.h; sourceTree = "<group>"; };
 		B29BC123140223BF00A136FA /* GameViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameViewController.m; sourceTree = "<group>"; };
 		B29BC124140223BF00A136FA /* GameViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = GameViewController.xib; path = Classes/GameViewController.xib; sourceTree = "<group>"; };
@@ -47,8 +46,9 @@
 		B29BC139140224F300A136FA /* AsthmapediaViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = AsthmapediaViewController.xib; path = Classes/AsthmapediaViewController.xib; sourceTree = "<group>"; };
 		B29BC190140228D900A136FA /* Fish.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Fish.h; sourceTree = "<group>"; };
 		B29BC191140228D900A136FA /* Fish.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Fish.m; sourceTree = "<group>"; };
-		B29BC1B5140229C800A136FA /* AccController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AccController.h; path = ../Original/OpenDayGame/Classes/AccController.h; sourceTree = SOURCE_ROOT; };
-		B29BC1B6140229C800A136FA /* AccController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AccController.m; path = ../Original/OpenDayGame/Classes/AccController.m; sourceTree = SOURCE_ROOT; };
+		B2D812201403191900F6CEF2 /* fish.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fish.png; sourceTree = "<group>"; };
+		B2D8123C1403194500F6CEF2 /* AccController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AccController.h; sourceTree = "<group>"; };
+		B2D8123D1403194F00F6CEF2 /* AccController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AccController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,8 +70,8 @@
 			children = (
 				B29BC190140228D900A136FA /* Fish.h */,
 				B29BC191140228D900A136FA /* Fish.m */,
-				B29BC1B5140229C800A136FA /* AccController.h */,
-				B29BC1B6140229C800A136FA /* AccController.m */,
+				B2D8123C1403194500F6CEF2 /* AccController.h */,
+				B2D8123D1403194F00F6CEF2 /* AccController.m */,
 				28D7ACF60DDB3853001CB0EB /* FishViewController.h */,
 				28D7ACF70DDB3853001CB0EB /* FishViewController.m */,
 				B29BC122140223BF00A136FA /* GameViewController.h */,
@@ -118,9 +118,9 @@
 		29B97317FDCFA39411CA2CEA /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				B2D812201403191900F6CEF2 /* fish.png */,
 				B29BC139140224F300A136FA /* AsthmapediaViewController.xib */,
 				B29BC124140223BF00A136FA /* GameViewController.xib */,
-				B29BC11F1402239400A136FA /* fish.png */,
 				2899E5210DE3E06400AC0155 /* FishViewController.xib */,
 				28AD733E0D9D9553002E5188 /* MainWindow.xib */,
 				8D1107310486CEB800E47090 /* Fish-Info.plist */,
@@ -203,9 +203,9 @@
 			files = (
 				28AD733F0D9D9553002E5188 /* MainWindow.xib in Resources */,
 				2899E5220DE3E06400AC0155 /* FishViewController.xib in Resources */,
-				B29BC1201402239400A136FA /* fish.png in Resources */,
 				B29BC126140223C000A136FA /* GameViewController.xib in Resources */,
 				B29BC13B140224F300A136FA /* AsthmapediaViewController.xib in Resources */,
+				B2D812211403191900F6CEF2 /* fish.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -222,7 +222,7 @@
 				B29BC125140223C000A136FA /* GameViewController.m in Sources */,
 				B29BC13A140224F300A136FA /* AsthmapediaViewController.m in Sources */,
 				B29BC192140228D900A136FA /* Fish.m in Sources */,
-				B29BC1B7140229C800A136FA /* AccController.m in Sources */,
+				B2D8123E1403194F00F6CEF2 /* AccController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
