@@ -18,7 +18,7 @@
 {
 	GameViewController * gameView = [[GameViewController alloc] initWithNibName:NULL bundle:NULL];
 	
-	[self presentModalViewController:gameView animated:YES];
+	[self presentModalViewController:gameView animated:NO];
 
 	
 

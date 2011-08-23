@@ -9,10 +9,16 @@
 #import "GameViewController.h"
 #import "FishViewController.h"
 #import "Fish.h"
+#import "DustMite.h"
 
 
 @implementation GameViewController
 
+@synthesize scoreLabel;
+
+Fish *theFish;
+DustMite *theMite;
+float score = 0;
 
 -(IBAction)back
 {
@@ -23,26 +29,45 @@
 
 -(IBAction)touchedButton
 {
-	printf("screen touched");
-	//UITouch *t = [touches lungs];
-	//CGPoint p = [t locationInView:self.view];
-	Fish *theFish = [[Fish alloc] init];
-	[self.view addSubview:theFish];
-	[theFish setCenter:self.view.center];
+
+	
 }
 
 
 
  // The designated initializer.  Override if you create the controller programmatically and want to perform customization that is not appropriate for viewDidLoad.
-/*
+
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
-        // Custom initialization.
+		theFish = [[Fish alloc] init];
+		[self.view addSubview:theFish];
+		[theFish setCenter:self.view.center];
+		
+		theMite = [[DustMite alloc] init];
+		[self.view addSubview:theMite];
+		
+		[theMite setCenter:self.view.center];
+		
+		[NSTimer scheduledTimerWithTimeInterval:1/30.0 target:self selector:@selector(checkCollision) userInfo:nil repeats:true];
     }
     return self;
 }
-*/
+
+-(void)checkCollision
+{
+	if(theFish.YPos > (theMite.YPos-30) && theFish.YPos < (theMite.YPos +30)){
+		if(theFish.XPos > (theMite.XPos-30) && theFish.XPos < (theMite.XPos +30))
+			printf("HIT!\n");
+		printf("%f",score);
+		score = score + 10;
+		
+		NSString *theScore = [NSString stringWithFormat:@"Score: %f",score];			  
+		[scoreLabel setText:theScore];
+		
+	}
+}
+
 
 /*
 // Implement viewDidLoad to do additional setup after loading the view, typically from a nib.

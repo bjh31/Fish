@@ -19,6 +19,9 @@ float reboundY = 0;
 @synthesize XSpeed;
 @synthesize YSpeed;
 
+@synthesize XPos;
+@synthesize YPos;
+
 - (id)init {
     self = [super initWithImage:[UIImage imageNamed:@"fish.png"]];
     if (self) {
@@ -36,19 +39,19 @@ float reboundY = 0;
 -(void) updateFish
 {
 	//get x and y pos of the fish
-	CGFloat xpos = self.center.x + self.XSpeed;
-	CGFloat ypos = self.center.y + self.YSpeed;
+	XPos = self.center.x + self.XSpeed;
+	YPos = self.center.y + self.YSpeed;
 	
 	//if fish has hit wall have hit wall
-	if(xpos > width || xpos < 0){
-		xpos = xpos + (-1* (self.XSpeed * 4));
+	if(XPos > width || XPos < 0){
+		XPos = XPos + (-1* (self.XSpeed * 4));
 		[self setXSpeed:(self.YSpeed/2)];
 		
 		reboundX = self.XSpeed;
 	}
 	
-	if(ypos > height || ypos < 0){
-		ypos = ypos + (-1* (self.YSpeed * 4));
+	if(YPos > height || YPos < 0){
+		YPos = YPos + (-1* (self.YSpeed * 4));
 		[self setYSpeed:(self.YSpeed/2)];
 		reboundY = self.YSpeed;
 	}
@@ -75,7 +78,7 @@ float reboundY = 0;
 	
 		//set speed
 		[self setXSpeed:newX + acc.gx]; [self setYSpeed:newY + acc.gy];
-		[self setCenter:CGPointMake(xpos, ypos)];
+		[self setCenter:CGPointMake(XPos, YPos)];
 	}
 
 

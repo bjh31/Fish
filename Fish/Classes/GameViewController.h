@@ -10,10 +10,12 @@
 
 
 @interface GameViewController : UIViewController {
-
+	UILabel *scoreLabel;
 }
 
 -(IBAction)back;
 -(IBAction)touchedButton;
+
+@property (nonatomic, retain) IBOutlet UILabel *scoreLabel;
 
 @end
