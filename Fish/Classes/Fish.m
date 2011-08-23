@@ -8,6 +8,12 @@ float width = 768;
 float height = 1002;
 float ball_radius = 50;
 float friction = .9;
+float newX = 0;
+float newY = 0;
+
+float reboundX = 0;
+float reboundY = 0;
+
 
 @implementation Fish;
 @synthesize XSpeed;
@@ -29,24 +35,48 @@ float friction = .9;
 
 -(void) updateFish
 {
-	
+	//get x and y pos of the fish
 	CGFloat xpos = self.center.x + self.XSpeed;
 	CGFloat ypos = self.center.y + self.YSpeed;
 	
+	//if fish has hit wall have hit wall
 	if(xpos > width || xpos < 0){
 		xpos = xpos + (-1* (self.XSpeed * 4));
 		[self setXSpeed:(self.YSpeed/2)];
+		
+		reboundX = self.XSpeed;
 	}
 	
 	if(ypos > height || ypos < 0){
 		ypos = ypos + (-1* (self.YSpeed * 4));
 		[self setYSpeed:(self.YSpeed/2)];
+		reboundY = self.YSpeed;
 	}
 	
-	[self setXSpeed:self.XSpeed + acc.gx]; [self setYSpeed:self.YSpeed + acc.gy];
-	[self setCenter:CGPointMake(xpos, ypos)];
+	if(reboundX != 0){
+		newX = reboundY;
+		
+		if(reboundX > 0){reboundX = reboundX - 1;}
+		else{reboundX = reboundX + 1;}
+	}
+	else{
+		newX = self.XSpeed;
+	}
 	
+	if(reboundY != 0){
+		newY = reboundY;
+		
+		if(reboundY > 0){reboundY = reboundY - 1;}
+		else{reboundY = reboundY + 1;}
+	}
+	else{
+		newY = self.YSpeed;
+	}
 	
-	
-}
+		//set speed
+		[self setXSpeed:newX + acc.gx]; [self setYSpeed:newY + acc.gy];
+		[self setCenter:CGPointMake(xpos, ypos)];
+	}
+
+
 @end
