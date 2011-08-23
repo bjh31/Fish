@@ -3,7 +3,7 @@
 //
 #import "AccController.h"
 
-float scale = 3.0;
+float scale = 2.0;
 
 @implementation AccController
 

@@ -40,15 +40,19 @@ float score = 0;
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
+		
+		//instantiate the fish
 		theFish = [[Fish alloc] init];
 		[self.view addSubview:theFish];
 		[theFish setCenter:self.view.center];
 		
+		//instantiate the mite
 		theMite = [[DustMite alloc] init];
-		[self.view addSubview:theMite];
+		[self.view addSubview:theMite];		
+		CGPoint p = CGPointMake(100,100);
+		[theMite setCenter:p];
 		
-		[theMite setCenter:self.view.center];
-		
+		//make a timer to check for collisions
 		[NSTimer scheduledTimerWithTimeInterval:1/30.0 target:self selector:@selector(checkCollision) userInfo:nil repeats:true];
     }
     return self;
@@ -56,15 +60,19 @@ float score = 0;
 
 -(void)checkCollision
 {
-	if(theFish.YPos > (theMite.YPos-30) && theFish.YPos < (theMite.YPos +30)){
-		if(theFish.XPos > (theMite.XPos-30) && theFish.XPos < (theMite.XPos +30))
+	if(theFish.YPos > (theMite.YPos-70) && theFish.YPos < (theMite.YPos +70)){
+		if(theFish.XPos > (theMite.XPos-70) && theFish.XPos < (theMite.XPos +70))
+		{
 			printf("HIT!\n");
-		printf("%f",score);
-		score = score + 10;
-		
-		NSString *theScore = [NSString stringWithFormat:@"Score: %f",score];			  
-		[scoreLabel setText:theScore];
-		
+			
+			[theFish hit];
+			[theMite hit];
+			
+			//calculate the score and update the score label	
+			score = score + 10;		
+			NSString *theScore = [NSString stringWithFormat:@"Score: %f",score];			  
+			[scoreLabel setText:theScore];
+		}
 	}
 }
 

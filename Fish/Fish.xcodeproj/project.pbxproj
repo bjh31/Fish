@@ -20,6 +20,7 @@
 		B277265314036345004751A1 /* flu_virus.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B277265114036345004751A1 /* flu_virus.jpg */; };
 		B27726551403635A004751A1 /* GameViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B27726541403635A004751A1 /* GameViewController.xib */; };
 		B277265814036373004751A1 /* GameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B277265714036373004751A1 /* GameViewController.m */; };
+		B27727E114037E98004751A1 /* TheGameShould.m in Sources */ = {isa = PBXBuildFile; fileRef = B27727E014037E98004751A1 /* TheGameShould.m */; };
 		B29BC13A140224F300A136FA /* AsthmapediaViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B29BC138140224F300A136FA /* AsthmapediaViewController.m */; };
 		B29BC13B140224F300A136FA /* AsthmapediaViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B29BC139140224F300A136FA /* AsthmapediaViewController.xib */; };
 		B29BC192140228D900A136FA /* Fish.m in Sources */ = {isa = PBXBuildFile; fileRef = B29BC191140228D900A136FA /* Fish.m */; };
@@ -27,8 +28,17 @@
 		B2D8123E1403194F00F6CEF2 /* AccController.m in Sources */ = {isa = PBXBuildFile; fileRef = B2D8123D1403194F00F6CEF2 /* AccController.m */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		B27727DB14037E7C004751A1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 29B97313FDCFA39411CA2CEA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1D6058900D05DD3D006BFB54 /* Fish */;
+			remoteInfo = Fish;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
-		03F32F51140333440099FECB /* UnitTest.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UnitTest.octest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1D30AB110D05D00D00671497 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		1D3623240D0F684500981E51 /* FishAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FishAppDelegate.h; sourceTree = "<group>"; };
 		1D3623250D0F684500981E51 /* FishAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FishAppDelegate.m; sourceTree = "<group>"; };
@@ -49,6 +59,10 @@
 		B27726541403635A004751A1 /* GameViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GameViewController.xib; sourceTree = "<group>"; };
 		B277265614036373004751A1 /* GameViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameViewController.h; sourceTree = "<group>"; };
 		B277265714036373004751A1 /* GameViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameViewController.m; sourceTree = "<group>"; };
+		B27727D314037E76004751A1 /* UnitTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UnitTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B27727D414037E76004751A1 /* UnitTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "UnitTests-Info.plist"; sourceTree = "<group>"; };
+		B27727DF14037E98004751A1 /* TheGameShould.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TheGameShould.h; sourceTree = "<group>"; };
+		B27727E014037E98004751A1 /* TheGameShould.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TheGameShould.m; sourceTree = "<group>"; };
 		B29BC137140224F300A136FA /* AsthmapediaViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AsthmapediaViewController.h; sourceTree = "<group>"; };
 		B29BC138140224F300A136FA /* AsthmapediaViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AsthmapediaViewController.m; sourceTree = "<group>"; };
 		B29BC139140224F300A136FA /* AsthmapediaViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = AsthmapediaViewController.xib; path = Classes/AsthmapediaViewController.xib; sourceTree = "<group>"; };
@@ -60,13 +74,6 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		03F32F4E140333440099FECB /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		1D60588F0D05DD3D006BFB54 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -74,6 +81,13 @@
 				1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */,
 				1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */,
 				288765A50DF7441C002DB57D /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B27727D014037E76004751A1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -95,7 +109,7 @@
 			isa = PBXGroup;
 			children = (
 				1D6058910D05DD3D006BFB54 /* Fish.app */,
-				03F32F51140333440099FECB /* UnitTest.octest */,
+				B27727D314037E76004751A1 /* UnitTests.octest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -108,6 +122,9 @@
 				29B97317FDCFA39411CA2CEA /* Resources */,
 				29B97323FDCFA39411CA2CEA /* Frameworks */,
 				19C28FACFE9D520D11CA2CBB /* Products */,
+				B27727D414037E76004751A1 /* UnitTests-Info.plist */,
+				B27727DF14037E98004751A1 /* TheGameShould.h */,
+				B27727E014037E98004751A1 /* TheGameShould.m */,
 			);
 			name = CustomTemplate;
 			sourceTree = "<group>";
@@ -191,24 +208,6 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		03F32F50140333440099FECB /* UnitTest */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 03F32F56140333450099FECB /* Build configuration list for PBXNativeTarget "UnitTest" */;
-			buildPhases = (
-				03F32F4C140333440099FECB /* Resources */,
-				03F32F4D140333440099FECB /* Sources */,
-				03F32F4E140333440099FECB /* Frameworks */,
-				03F32F4F140333440099FECB /* ShellScript */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = UnitTest;
-			productName = UnitTest;
-			productReference = 03F32F51140333440099FECB /* UnitTest.octest */;
-			productType = "com.apple.product-type.bundle";
-		};
 		1D6058900D05DD3D006BFB54 /* Fish */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1D6058960D05DD3E006BFB54 /* Build configuration list for PBXNativeTarget "Fish" */;
@@ -225,6 +224,25 @@
 			productName = Fish;
 			productReference = 1D6058910D05DD3D006BFB54 /* Fish.app */;
 			productType = "com.apple.product-type.application";
+		};
+		B27727D214037E76004751A1 /* UnitTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B27727DA14037E77004751A1 /* Build configuration list for PBXNativeTarget "UnitTests" */;
+			buildPhases = (
+				B27727CE14037E76004751A1 /* Resources */,
+				B27727CF14037E76004751A1 /* Sources */,
+				B27727D014037E76004751A1 /* Frameworks */,
+				B27727D114037E76004751A1 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B27727DC14037E7C004751A1 /* PBXTargetDependency */,
+			);
+			name = UnitTests;
+			productName = UnitTests;
+			productReference = B27727D314037E76004751A1 /* UnitTests.octest */;
+			productType = "com.apple.product-type.bundle";
 		};
 /* End PBXNativeTarget section */
 
@@ -246,19 +264,12 @@
 			projectRoot = "";
 			targets = (
 				1D6058900D05DD3D006BFB54 /* Fish */,
-				03F32F50140333440099FECB /* UnitTest */,
+				B27727D214037E76004751A1 /* UnitTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		03F32F4C140333440099FECB /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		1D60588D0D05DD3D006BFB54 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -273,10 +284,17 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		B27727CE14037E76004751A1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		03F32F4F140333440099FECB /* ShellScript */ = {
+		B27727D114037E76004751A1 /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -292,13 +310,6 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		03F32F4D140333440099FECB /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		1D60588E0D05DD3D006BFB54 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -314,63 +325,25 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		B27727CF14037E76004751A1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B27727E114037E98004751A1 /* TheGameShould.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		B27727DC14037E7C004751A1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1D6058900D05DD3D006BFB54 /* Fish */;
+			targetProxy = B27727DB14037E7C004751A1 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin XCBuildConfiguration section */
-		03F32F54140333450099FECB /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				COPY_PHASE_STRIP = NO;
-				FRAMEWORK_SEARCH_PATHS = "$(DEVELOPER_LIBRARY_DIR)/Frameworks";
-				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_ENABLE_FIX_AND_CONTINUE = NO;
-				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
-				GCC_MODEL_TUNING = G5;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/Cocoa.framework/Headers/Cocoa.h";
-				INFOPLIST_FILE = "UnitTest-Info.plist";
-				INSTALL_PATH = "$(USER_LIBRARY_DIR)/Bundles";
-				OTHER_LDFLAGS = (
-					"-framework",
-					Cocoa,
-					"-framework",
-					SenTestingKit,
-				);
-				PREBINDING = NO;
-				PRODUCT_NAME = UnitTest;
-				WRAPPER_EXTENSION = octest;
-			};
-			name = Debug;
-		};
-		03F32F55140333450099FECB /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				COPY_PHASE_STRIP = YES;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				FRAMEWORK_SEARCH_PATHS = "$(DEVELOPER_LIBRARY_DIR)/Frameworks";
-				GCC_ENABLE_FIX_AND_CONTINUE = NO;
-				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
-				GCC_MODEL_TUNING = G5;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/Cocoa.framework/Headers/Cocoa.h";
-				INFOPLIST_FILE = "UnitTest-Info.plist";
-				INSTALL_PATH = "$(USER_LIBRARY_DIR)/Bundles";
-				OTHER_LDFLAGS = (
-					"-framework",
-					Cocoa,
-					"-framework",
-					SenTestingKit,
-				);
-				PREBINDING = NO;
-				PRODUCT_NAME = UnitTest;
-				WRAPPER_EXTENSION = octest;
-				ZERO_LINK = NO;
-			};
-			name = Release;
-		};
 		1D6058940D05DD3E006BFB54 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -395,6 +368,66 @@
 				INFOPLIST_FILE = "Fish-Info.plist";
 				PRODUCT_NAME = Fish;
 				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B27727D814037E77004751A1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				COPY_PHASE_STRIP = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				INFOPLIST_FILE = "UnitTests-Info.plist";
+				OTHER_LDFLAGS = (
+					"-framework",
+					Foundation,
+					"-framework",
+					SenTestingKit,
+					"-framework",
+					UIKit,
+				);
+				PREBINDING = NO;
+				PRODUCT_NAME = UnitTests;
+				SDKROOT = iphoneos;
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		B27727D914037E77004751A1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				INFOPLIST_FILE = "UnitTests-Info.plist";
+				OTHER_LDFLAGS = (
+					"-framework",
+					Foundation,
+					"-framework",
+					SenTestingKit,
+					"-framework",
+					UIKit,
+				);
+				PREBINDING = NO;
+				PRODUCT_NAME = UnitTests;
+				SDKROOT = iphoneos;
+				WRAPPER_EXTENSION = octest;
+				ZERO_LINK = NO;
 			};
 			name = Release;
 		};
@@ -430,20 +463,20 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		03F32F56140333450099FECB /* Build configuration list for PBXNativeTarget "UnitTest" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				03F32F54140333450099FECB /* Debug */,
-				03F32F55140333450099FECB /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 		1D6058960D05DD3E006BFB54 /* Build configuration list for PBXNativeTarget "Fish" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				1D6058940D05DD3E006BFB54 /* Debug */,
 				1D6058950D05DD3E006BFB54 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B27727DA14037E77004751A1 /* Build configuration list for PBXNativeTarget "UnitTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B27727D814037E77004751A1 /* Debug */,
+				B27727D914037E77004751A1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

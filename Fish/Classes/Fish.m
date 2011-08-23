@@ -8,11 +8,8 @@ float width = 768;
 float height = 1002;
 float ball_radius = 50;
 float friction = .9;
-float newX = 0;
-float newY = 0;
+float maxSpeed = 10;
 
-float reboundX = 0;
-float reboundY = 0;
 
 
 @implementation Fish;
@@ -38,48 +35,87 @@ float reboundY = 0;
 
 -(void) updateFish
 {
-	//get x and y pos of the fish
+	/*
+	 *Check the fish is with in horizonal bounds of the screen
+	 */
+	
+	if(XPos > width ){//if the fish is beyond the width
+		
+		//set its speed in the oposite direction
+		[self setXSpeed:(self.XSpeed - (1.8*self.XSpeed))];		
+		XPos = (self.center.x -5) + self.XSpeed;//move the position 5 pixels of the wall ( to stop jumping out of the bounds)
+		
+	}		
+	else if(XPos < 0){//if the fish is beneth the width
+		
+		//set its speed in the opposite direction
+		[self setXSpeed:(self.XSpeed - (1.8*self.XSpeed))];		
+		XPos = (self.center.x +5) + self.XSpeed;//move the position 5 pixels off the wall (to stop jumpng out of bounds)		
+		
+	}
+	else {//its with in the width update its speed
+		
+		XPos = self.center.x + self.XSpeed;
+		
+	}
+
+	
+	
+	/*
+	 *Check the fish is with in the vertical bounds of the screen
+	 */
+	
+	if(YPos > height ){//if the fish is off the bottom of the screen
+		
+		//set its speed in the oposite direction
+		[self setYSpeed:(self.YSpeed - (1.8*self.YSpeed))];		
+		YPos = (self.center.y -5) + self.YSpeed;//move the position 5 pixels of the wall ( to stop jumping out of the bounds)
+		
+	}
+	else if(YPos < 0){//if the fish is off the top of the screen
+		
+		//set its speed in the oposite direction
+		[self setYSpeed:(self.YSpeed - (1.8*self.YSpeed))];		
+		YPos = (self.center.y +5) + self.YSpeed;//move the position 5 pixels of the wall ( to stop jumping out of the bounds)
+		
+	}
+	else {//its within the height, update its speed
+		
+		
+		YPos = self.center.y + self.YSpeed;
+		
+	}	
+	
+		
+	/*
+	 *Checks that the speeds aren't getting ridiculus
+	 */
+	if (self.XSpeed < maxSpeed ) {		
+		[self setXSpeed:self.XSpeed + acc.gx]; 	
+	}
+	if (self.YSpeed < maxSpeed) {
+		[self setYSpeed:self.YSpeed  + acc.gy];	
+	}
+	
+	
+	
+	//The The Fish on the Ipad
+	[self setCenter:CGPointMake(XPos, YPos)];
+}
+
+
+
+
+
+-(void) hit
+{
+	[self setYSpeed:(self.YSpeed - (2*self.YSpeed))];
+	[self setXSpeed:(self.XSpeed - (2*self.XSpeed))];
+	
 	XPos = self.center.x + self.XSpeed;
 	YPos = self.center.y + self.YSpeed;
-	
-	//if fish has hit wall have hit wall
-	if(XPos > width || XPos < 0){
-		XPos = XPos + (-1* (self.XSpeed * 4));
-		[self setXSpeed:(self.YSpeed/2)];
-		
-		reboundX = self.XSpeed;
-	}
-	
-	if(YPos > height || YPos < 0){
-		YPos = YPos + (-1* (self.YSpeed * 4));
-		[self setYSpeed:(self.YSpeed/2)];
-		reboundY = self.YSpeed;
-	}
-	
-	if(reboundX != 0){
-		newX = reboundY;
-		
-		if(reboundX > 0){reboundX = reboundX - 1;}
-		else{reboundX = reboundX + 1;}
-	}
-	else{
-		newX = self.XSpeed;
-	}
-	
-	if(reboundY != 0){
-		newY = reboundY;
-		
-		if(reboundY > 0){reboundY = reboundY - 1;}
-		else{reboundY = reboundY + 1;}
-	}
-	else{
-		newY = self.YSpeed;
-	}
-	
-		//set speed
-		[self setXSpeed:newX + acc.gx]; [self setYSpeed:newY + acc.gy];
 		[self setCenter:CGPointMake(XPos, YPos)];
-	}
+}
 
 
 @end

@@ -21,5 +21,6 @@
 @property float YPos;
 
 -(void) updateMite;
+-(void) hit;
 
 @end

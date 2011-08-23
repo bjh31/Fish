@@ -16,5 +16,6 @@
 @property float YPos;
 
 -(void) updateFish;
+-(void) hit;
 
 @end

@@ -35,20 +35,29 @@ float ydir = 5;
 
 -(void) updateMite
 {
-	XPos = self.center.x;
-	YPos = self.center.y;
+	XPos = self.center.x + xdir;
+	YPos = self.center.y + ydir;
 	
-	CGFloat xpos = XPos + xdir;
-	CGFloat ypos = YPos+ ydir;
 	
-	if(xpos > screen_width || xpos <0){
+	if(XPos > screen_width || XPos <0){
 		xdir = xdir *-1;
 	}
-	if(ypos > screen_height || ypos < 0){
+	if(YPos > screen_height || YPos < 0){
 		ydir = ydir *-1;
 	}
 	
-	[self setCenter:CGPointMake(xpos, ypos)];
+	[self setCenter:CGPointMake(XPos, YPos)];
+}
+
+-(void)hit
+{
+	xdir = xdir *-1;
+	ydir = ydir *-1;
+	int randomX = rand() % 700;
+	int randomY = rand() % 900;
+	XPos = randomX + xdir;
+	YPos = randomY + ydir;
+	[self setCenter:CGPointMake(XPos, YPos)];
 }
 
 @end
